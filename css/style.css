@@ -140,6 +140,9 @@ main {
     height: 100%;
     width: 100%;
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 @media screen and (max-width: 380px){
