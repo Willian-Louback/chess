@@ -4,40 +4,109 @@
 }
 
 body {
-    background-color: rgb(22, 21, 18);}
+    background-color: rgb(22, 21, 18);
+}
 
 main {
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .board {
     height: 530px;
     width: 530px;
-    border: 1px solid #ff0000;
+    border: 1px solid #964d22;
     display: grid;
 }
 
+.info {
+    background-color: #262421;
+    height: 532px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.turnMove {
+    color: #bababa;
+}
+
+@media screen and (max-width: 685px){
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 380px){
+    main {
+        padding-top: 100px;
+        gap: 30px;
+    }
+
     .board {
         height: 300px;
         width: 300px;
     }
+
+    .info {
+        width: 302px;
+        height: 200px;
+    }
 }
 
 @media screen and (min-width: 380px) and (max-width: 480px){
+    main {
+        padding-top: 70px;
+        gap: 30px;
+    }
+
     .board {
         height: 350px;
         width: 350px;
     }
+
+    .info {
+        width: 352px;
+        height: 200px;
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 685px){
+    main {
+        padding-top: 40px;
+        gap: 30px;
+    }
+
     .board {
         height: 450px;
         width: 450px;
+    }
+
+    .info {
+        width: 452px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 685px) and (max-width: 850px){
+    main {
+        gap: 25px;
+    }
+
+    .board {
+        height: 450px;
+        width: 450px;
+    }
+
+    .info {
+        width: 200px;
+        height: 452px;
     }
 }

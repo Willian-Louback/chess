@@ -19,6 +19,10 @@ export class Game {
     }
 
     async nextTime() {
+        this.turnMove == "white" ?
+            document.querySelector(".turnMove").innerText = "Vez das: Brancas" :
+            document.querySelector(".turnMove").innerText = "Vez das: Pretas";
+
         this.piecesToMove = document.querySelectorAll(`.${this.turnMove}`);
 
         await this.playerMove();

@@ -4,7 +4,6 @@ const clickPieceEvent = (e, pieces, resolve, game) => {
     const squareClicked = e.target;
     const positionColor = squareClicked.classList[2] == "white" ? 0 : 1;
 
-
     if(localStorage.pieceId) {
         removeElement(pieces[positionColor][localStorage.pieceId]);
     }
