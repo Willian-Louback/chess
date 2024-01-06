@@ -123,6 +123,10 @@ main {
     /*background-color: blue;*/
 }
 
+.selectedSquare {
+    background-color: #00ff5e81;
+}
+
 .menuPromote {
     background-color: #ffffffd9;
     height: 100%;
