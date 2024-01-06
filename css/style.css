@@ -4,8 +4,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, rgb(164, 55, 161), rgb(0, 0, 255));
-}
+    background-color: rgb(22, 21, 18);}
 
 main {
     height: 100vh;
@@ -18,135 +17,8 @@ main {
 .board {
     height: 530px;
     width: 530px;
-    border: 1px solid black;
+    border: 1px solid #ff0000;
     display: grid;
-}
-
-.squareWhite {
-    background-color: #eedc97;
-}
-
-.squareBlack {
-    background-color: #964d22;
-}
-
-.square {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-}
-
-.pawnW {
-    background: url("../assets/images/pawnW.png");
-}
-
-.pawnB {
-    background: url("../assets/images/pawnB.png");
-}
-
-.bishopW {
-    background: url("../assets/images/bishopW.png");
-}
-
-.bishopB {
-    background: url("../assets/images/bishopB.png");
-}
-
-.rookW {
-    background: url("../assets/images/rookW.png");
-}
-
-.rookB {
-    background: url("../assets/images/rookB.png");
-}
-
-.queenW {
-    background: url("../assets/images/queenW.png");
-}
-
-.queenB {
-    background: url("../assets/images/queenB.png");
-}
-
-.kingW {
-    background: url("../assets/images/kingW.png");
-}
-
-.kingB {
-    background: url("../assets/images/kingB.png");
-}
-
-.horseW {
-    background: url("../assets/images/horseW.png");
-}
-
-.horseB {
-    background: url("../assets/images/horseB.png");
-}
-
-.moveSquare {
-    background-color: rgba(0, 255, 21, 0.608);
-    border-radius: 100%;
-    height: 60%;
-    width: 60%;
-    pointer-events: none;
-    position: absolute;
-}
-
-.piece {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-}
-
-.check {
-    /*background-color: red;*/
-}
-
-.isCheckW, .isCheckB {
-    background-color: red;
-}
-
-.dangerousSquareW {
-    /* background-color: rgba(0, 242, 255, 0.584); */
-}
-
-.dangerousSquareB {
-    /* background-color: rgba(204, 255, 0, 0.584); */
-}
-
-.blockCheck {
-    /*background-color: blue;*/
-}
-
-.selectedSquare {
-    background-color: #00ff5e81;
-}
-
-.menuPromote {
-    background-color: #ffffffd9;
-    height: 100%;
-    width: 400%;
-    position: absolute;
-    top: -70px;
-    border: 1px solid black;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.buttonPromote {
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 @media screen and (max-width: 380px){
