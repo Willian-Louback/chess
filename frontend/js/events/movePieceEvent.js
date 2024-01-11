@@ -3,7 +3,14 @@ import verifyCheck from "../utils/checkers/verifyCheck.js";
 import promotePawn from "../modules/promotePawn.js";
 
 const movePieceEvent = async (e, resolve, pieces, color, game) => {
-    const squareToMove = e.target.hasChildNodes() ? e.target : e.target.parentNode;
+    let squareToMove;
+
+    if(e[0] == false) {
+        squareToMove = document.querySelector(`#c${e[1].position[0]}l${e[1].position[1]}`);
+    } else {
+        squareToMove = e.target.hasChildNodes() ? e.target : e.target.parentNode;
+    }
+
     const positionColor = color == "white" ? 0 : 1;
     const positionColorReverse = color == "white" ? 1 : 0;
     let promote = false;
@@ -200,7 +207,9 @@ const movePieceEvent = async (e, resolve, pieces, color, game) => {
 
     //
 
-    resolve();
+    if(resolve) {
+        resolve(squareToMove);
+    }
 };
 
 export default movePieceEvent;
