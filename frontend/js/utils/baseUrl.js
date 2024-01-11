@@ -1,1 +1,1 @@
-export const baseUrl = ``;
+export const baseUrl = `wss://chessbackend-m2v761a0.b4a.run/`;
