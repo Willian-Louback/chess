@@ -8,7 +8,7 @@ import verifyNewPlayer from "./utils/checkers/verifyNewPlayer.js";
 import verifyPlayerColor from "./utils/checkers/verifyPlayerColor.js";
 
 const app = express();
-app.use(cors);
+app.use(cors());
 
 const port = process.env.PORT || 3000;
 
